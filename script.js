@@ -35,22 +35,14 @@ let count = 0;
         }
 
 
-document.querySelector('#green').onclick = function(){
+document.querySelectorAll('button').forEach(function(button){
 
-    document.querySelector('#green').style.backgroundColor = 'green';
+    button.onclick= function(){
 
-}
+        document.querySelector('.headera_text').style.color = button.dataset.color;
 
-document.querySelector('#red').onclick = function(){
+    }
 
-    document.querySelector('#red').style.backgroundColor = 'red';
-
-}
-
-document.querySelector('#blue').onclick = function(){
-
-    document.querySelector('#blue').style.backgroundColor = 'blue';
-
-}
+})
 
 
