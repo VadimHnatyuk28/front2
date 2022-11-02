@@ -9,11 +9,11 @@
 </head>
 <body>
     
-    <h1>0</h1>
+    <h1 class="disp">0</h1>
 
     <button onclick="improve()">Count+</button>
     <button onclick="remove()">Count-</button>
-    <button onclick="reset()">Reset-</button>
+    <button onclick="reset()">Reset</button>
 
     
 
@@ -26,9 +26,9 @@
     
     <h1 class="headera_text">Hello</h1>
 
-    <button data-color="green">Green</button>
-    <button data-color="red">Red</button>
-    <button data-color="blue">Blue</button>
+    <button data-color="green" class="changeHeadText">Green</button>
+    <button data-color="red" class="changeHeadText" >Red</button>
+    <button data-color="blue" class="changeHeadText">Blue</button>
 
     <br>
 
@@ -41,6 +41,16 @@
         <option value="purple">Purple</option>
 
     </select>
+
+    <br>
+
+
+    <form class="changeColorForm">
+
+        <input type="text" id="color">
+        <input type="submit">
+
+    </form>
 
     <script src="script.js"></script>
 </body>

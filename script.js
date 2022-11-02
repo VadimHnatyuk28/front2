@@ -7,10 +7,13 @@ document.addEventListener('DOMContentLoaded',function(){
         alert(`Hello ${name}`)
     }
 
+    
+
+
+
 })
 
-
-let number = document.querySelector('h1');
+let number = document.querySelector('.disp');
 let count = 0;
 
         function improve(){
@@ -35,7 +38,8 @@ let count = 0;
         }
 
 
-document.querySelectorAll('button').forEach(function(button){
+
+document.querySelectorAll('.changeHeadText').forEach(function(button){
 
     button.onclick= function(){
 
@@ -44,5 +48,16 @@ document.querySelectorAll('button').forEach(function(button){
     }
 
 })
+
+document.querySelector('select').onchange = function(){
+    document.querySelector('.headera_text').style.color =this.value; 
+}
+
+document.querySelector('.changeColorForm').onsubmit=function(){
+
+    const name = document.querySelector('#color').value;
+    document.querySelector('.headera_text').style.color = name;
+}
+
 
 
