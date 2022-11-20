@@ -1,0 +1,379 @@
+*{
+ margin: 0;
+ padding: 0;   
+ color: aliceblue;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+background-color: #2D2D32;;
+}
+.wrap{
+    background-color: #2D2D32;
+}
+.nav{
+    background-color: #2A2A2E;  
+    min-height: 100px;
+}
+
+.menu{
+    width: 10%;
+    background-color: #2A2A2E;  
+    min-height:100% ;
+    
+    
+}
+.logo{
+    height: 120px;
+}
+.wrap{
+    width: 90%;
+}
+.wrap-content{
+    display: flex;
+}
+.navigation{
+    background-color: #2A2A2E;  
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    align-items: center;
+    padding:10px 0;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+ul{
+   margin: 0 15px;
+}
+.btns{
+    
+    display: flex;
+    align-items: center;
+   
+    
+}
+.container{
+    opacity: 0.5;
+    text-align: center;
+    padding: 0;
+}
+.content-img{
+    width: 500px;
+    padding: 0;
+}
+h1{
+    font-size: 90px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+span{
+    color: #FFDA20;
+    
+    padding: 0;
+    margin: 0;
+}
+.deskpription>p{
+    font-size: 20px;
+    width: 350px;
+    text-align: justify;
+    font-weight: 700;
+}
+.interaktive span{
+    font-weight: 900;
+    font-size: 50px;
+}
+.second-wrap{
+    display: flex; 
+    padding-top:100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-img{
+    border-radius: 10px;
+}
+.interaktive{
+    padding: 50px 0;
+}
+hr{
+    border:3px solid #F9BF26;
+    background-color: #F9BF26;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.svg{
+    width: 50px;
+    margin-top: 20px;
+
+}
+.svg:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.icons{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.btn.btn-outline-warning{
+    font-size: 20px;
+    color: #FFDA20;
+}
+.btn-outline-warning{
+    color: black;
+}
+a.tel{
+    color: white;
+    padding: 0 20px;
+    font-weight: 700;
+}
+a.tel:hover{
+    text-decoration: none;
+    color: red;
+    transition:0.3s;
+}
+.deskpription .tel{
+    display: none;
+}
+.btns a{
+    text-decoration: none;
+    color: #FFDA20;
+}
+.btns a:hover{
+    color: #2A2A2E;
+    
+}
+.dropdown-item.btn-outline-warning{
+    color: #000;
+}
+@media(max-width:1361px){
+    a.tel{
+        display: none;
+    }
+    .deskpription .tel{
+        display: block;
+    }
+}
+
+.shashlik{
+    border-radius: 5px;
+    width: 28%;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+.interaktive h2{
+    text-align: center;
+    font-size: 45px;
+    margin: 30px 0;
+}
+.shashlik:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 60px 0;
+}
+.card:hover{
+    transform: scale(1.3);
+    transition: 600ms;
+    transition-duration: 0.5s;
+    background-color: rgb(248, 203, 56);
+    opacity: 1;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.95;
+    width: 18rem;
+}
+.card-text{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  
+}
+#interaktive h2{
+    text-align: center;
+    font-size: 45px;
+    margin: 30px 0;
+}
+.iconss{
+    display: none;
+}
+footer{
+    background-color: #2A2A2E;
+    padding:30px;
+}
+.footer-tel{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-tel:hover{
+    border: none;
+
+}
+@media(min-width:1800px){
+    .card{
+        width: 28rem;
+    }
+    .deskpription>p{
+        font-size: 40px;
+        width: 800px;
+    }
+}
+@media (min-width: 1440px) and (max-width:1799px) {
+    .card{
+        width: 23rem;
+    }
+    .deskpription>p{
+        font-size: 30px;
+        width: 600px;
+    }
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    ul{
+        margin: 0 4px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+    li{
+        display: none;
+    }
+    .products{
+        display: block;
+        margin: 0;
+    }
+    .card{
+        margin: 15px auto;
+        width: 32rem;
+    }
+    .second-wrap{
+        display: block;
+        justify-content: center;
+    }
+   .con{
+       text-align: center;
+       padding-top: 15px;
+   }
+   .deskpription>p{
+       margin: 0 auto;
+       width: 450px;
+   }
+   a.tel{
+       margin-left:15px ;
+       font-size: 25px;
+   }
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .card{
+       width: 27rem;
+    }
+    .content-img{
+        width: 300px;
+    }
+    .deskpription>p{
+        width: 380px;
+    }
+    .card:hover{
+        transform: scale(1.15);
+        transition: 600ms;
+        transition-duration: 0.5s;
+        background-color: rgb(248, 203, 56);
+        opacity: 1;
+    }
+    .footer-icons{
+        text-align: center;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .gallery{
+       
+       align-items: center; 
+        flex-direction: column;   
+    }
+    .shashlik{
+        margin: 20px 0;
+        width: 80%;
+    }
+    .card{
+        width: 22rem;
+    }
+    .icons{
+        display: none;
+    }
+    .deskpription>p{
+        width: 360px;
+    }
+    .iconss{
+        display: block;
+    }
+    .svg{
+        margin-left: 35px;
+    }
+    .card:hover{
+        transform: scale(1.05);
+        transition: 600ms;
+        transition-duration: 0.5s;
+        background-color: rgb(248, 203, 56);
+        opacity: 1;
+    }
+}
+
+/* Iphone 5 */
+@media (max-width: 400px) {
+    .deskpription>p{
+        width: 270px;
+    }
+    .card{
+        width: 18rem;
+    }
+    footer .svg{
+        width: 35px;
+    }
+    
+}
+@media(max-width:370px){
+    .logo{
+        height: 100px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    a.tel{
+        font-size: 20px;
+    }
+    .interaktive h2{
+        font-size: 30px;
+    }
+    #interaktive h2{
+        font-size: 30px;
+    }
+    hr{
+        width: 200px;
+    }
+}
