@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        
+    </style>
+</head>
+<body>
+    <p><input type="text" id='text' autocomplete="off" autofocus></p>
+    <div class="result">0</div>
+
+   <button class="add">Add</button>
+   <button class="dem">Dem</button>
+    <script>
+        const res = document.querySelector('.result');
+        const text = document.querySelector('#text');
+        let a =  text.addEventListener('input',function(e){
+            console.log(e.target.value)
+        })
+
+        let result=0;
+        let add = document.querySelector('.add')
+        add.addEventListener('click', function(){
+            let newRes=result+parseInt(text.value);
+            res.innerHTML = newRes;
+            result=parseInt(res.innerHTML);
+            text.value='';
+            console.log(result.innerHTML);
+            text.focus();
+            console.log(typeof res);
+        })
+
+     
+       document.querySelector('.dem').addEventListener('click',function(){
+        console.log(result);
+       }) 
+        
+
+        
+       
+    </script>
+</body>
+</html>
