@@ -9,7 +9,7 @@
 <body>
     <p></p>
     <form >
-        <input type="number" class="text" autocomplete="off" autofocus required="required">
+        <input type="number" class="text" autocomplete="off" autofocus required="required" max="10" min="0">
         <input type="submit" class="sub" onsubmit="return false; ">
     </form>
     <div class="result">
@@ -25,25 +25,37 @@
         let num ;
         let person=0;
         let pc=0;
+        let pcResultShow = document.querySelector('.pcResult')
+        let personResultShow = document.querySelector('.personResult')
         let sub = document.querySelector('.sub')
+        
         sub.addEventListener('click',function(){
             event.preventDefault();
             num = Math.floor(Math.random() * 11);
             if(num==text.value){
                 alert("Вітаємо, ви вгадали число яке загадав комп'ютер");
                 person++;
-                document.querySelector('.pcResult').innerHTML = `PC ${pc}`
-                document.querySelector('.personResult').innerHTML = `Person ${person}`
+                pcResultShow.innerHTML = `PC ${pc}`
+                personResultShow.innerHTML = `Person ${person}`
+                
 
             }else{
                 alert("Нажажль ви не вгадали число яке загадав комп'ютер, комп'ютер загадав число "+num)
                 pc++;
-                document.querySelector('.pcResult').innerHTML = `PC ${pc}`
-                document.querySelector('.personResult').innerHTML = `Person ${person}`
+                pcResultShow.innerHTML = `PC ${pc}`
+                personResultShow.innerHTML = `Person ${person}`
 
             }
+            text.focus();
             text.value='';
+
+            if(pc==5){
+            alert('Нажаль ти програв. Спробуй ще раз')
+            location.reload();
+        }
         })
+
+        
 
     </script>
 </body>
