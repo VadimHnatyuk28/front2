@@ -7,23 +7,75 @@
     <title>Document</title>
     <style>
         
+         .res{
+            margin-top: 5px;
+            width: 100%;
+            font-size: 30px;
+            height: 60px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .calculator{
+            margin-top: 50px;
+            width: 165px;
+            justify-content: center;
+
+        }
+        .operations > button{
+            height: 60px;
+            width: 60px;
+            font-size: 30px;
+            width: 100%;
+            max-width: 80px;
+            margin-top: 3px;
+
+            text-decoration: none;
+            transition: .5;
+            
+        }
+
+        button:hover{
+            filter: blur(0.4px);
+            
+        }
+        #text{
+            height: 35px;
+        }
+       
+        
         
         
     </style>
 </head>
 <body>
-    <p><input type="text" id='text' autocomplete="off" autofocus></p>
-    <div class="result">0</div>
+    <div class="calculator">
+        <p><input type="text" id='text' autocomplete="off" autofocus placeholder="Write numbers"></p>
+        <div class="result">0</div>
 
-   <button class="add">Add</button>
-   <button class="dem">Dem</button>
+        <div class="operations" >
+            <button class="add">+</button>
+            <button class="sub">-</button>
+            <button class="mul">*</button>
+            <button class="div">/</button>
+        </div>
+
+        <div><button class="res">Reset</button></div>
+        
+        
+    </div>
+   
     <script>
         const res = document.querySelector('.result');
         const text = document.querySelector('#text');
-        let a =  text.addEventListener('input',function(e){
-            console.log(e.target.value)
-        })
+        
+        // let a =  text.addEventListener('input',function(e){
+        //     console.log(e.target.value)
+        // })
 
+            
+        
         let result=0;
         let add = document.querySelector('.add')
         add.addEventListener('click', function(){
@@ -33,13 +85,48 @@
             text.value='';
             console.log(result.innerHTML);
             text.focus();
-            console.log(typeof res);
+            console.log(typeof result);
+
+
+        })
+
+        let sub = document.querySelector('.sub');
+        sub.addEventListener('click', function(){
+            newRes=result-parseInt(text.value);
+            res.innerHTML = newRes;
+            result=parseInt(res.innerHTML);
+            text.value='';
+            text.focus();
+        })
+
+        let mul = document.querySelector('.mul');
+        mul.addEventListener('click',function(){
+            newRes=result*parseInt(text.value);
+            res.innerHTML = newRes;
+            result=parseInt(res.innerHTML);
+            text.value='';
+            text.focus();
+        })
+
+        let div = document.querySelector('.div');
+        div.addEventListener('click',function(){
+            newRes=result / parseInt(text.value);
+            res.innerHTML = newRes;
+            result=parseInt(res.innerHTML);
+            text.value='';
+            text.focus();
+        })
+
+        let reset = document.querySelector('.res');
+        reset.addEventListener('click', function(){
+            text.value='';
+            res.innerHTML = 0;
+            result=0;
+            text.focus();
         })
 
      
-       document.querySelector('.dem').addEventListener('click',function(){
-        console.log(result);
-       }) 
+      
         
 
         
