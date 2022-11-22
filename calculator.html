@@ -77,44 +77,58 @@
             
         
         let result=0;
+        let newRes;
         let add = document.querySelector('.add')
         add.addEventListener('click', function(){
-            let newRes=result+parseInt(text.value);
-            res.innerHTML = newRes;
-            result=parseInt(res.innerHTML);
-            text.value='';
-            console.log(result.innerHTML);
-            text.focus();
-            console.log(typeof result);
-
-
+            if(text.value==''){
+                alert('Please, write the number')
+            }else{
+                newRes=result+parseInt(text.value);
+                res.innerHTML = newRes;
+                result=parseInt(res.innerHTML);
+                text.value='';
+                text.focus();
+            }
+            
         })
 
         let sub = document.querySelector('.sub');
         sub.addEventListener('click', function(){
-            newRes=result-parseInt(text.value);
-            res.innerHTML = newRes;
-            result=parseInt(res.innerHTML);
-            text.value='';
-            text.focus();
+            if(text.value==''){
+                alert('Please, write the number')
+            }else{
+                let newRes=result-parseInt(text.value);
+                res.innerHTML = newRes;
+                result=parseInt(res.innerHTML);
+                text.value='';
+                text.focus();
+            }
         })
 
         let mul = document.querySelector('.mul');
         mul.addEventListener('click',function(){
-            newRes=result*parseInt(text.value);
-            res.innerHTML = newRes;
-            result=parseInt(res.innerHTML);
-            text.value='';
-            text.focus();
+            if(text.value==''){
+                alert('Please, write the number')
+            }else{
+                let newRes=result*parseInt(text.value);
+                res.innerHTML = newRes;
+                result=parseInt(res.innerHTML);
+                text.value='';
+                text.focus();
+            }
         })
 
         let div = document.querySelector('.div');
         div.addEventListener('click',function(){
-            newRes=result / parseInt(text.value);
-            res.innerHTML = newRes;
-            result=parseInt(res.innerHTML);
-            text.value='';
-            text.focus();
+            if(text.value==''){
+                alert('Please, write the number')
+            }else{
+                let newRes=result/parseInt(text.value);
+                res.innerHTML = newRes;
+                result=parseInt(res.innerHTML);
+                text.value='';
+                text.focus();
+            }
         })
 
         let reset = document.querySelector('.res');
