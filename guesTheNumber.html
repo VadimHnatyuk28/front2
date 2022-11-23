@@ -18,6 +18,7 @@
     </div>
     <script>
 
+            
         
             let flag=true;      
             let name= prompt('Як тебе звати?')
@@ -32,10 +33,10 @@
                 }
             }
         
+            let newStr = name[0].toUpperCase() + name.slice(1);
+            
 
-
-
-        document.querySelector('p').innerHTML = `Привіт , ${name}! Тобі треба вгадати число яке загадав комп'ютер від 0 до 9`
+        document.querySelector('p').innerHTML = `Привіт , ${newStr}! Тобі треба вгадати число яке загадав комп'ютер від 0 до 9`
         let text = document.querySelector('.text')
         let num ;
         let person=0;
