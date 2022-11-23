@@ -18,41 +18,65 @@
     </div>
     <script>
 
-        let name= prompt('Як тебе звати?')
+        
+            let flag=true;      
+            let name= prompt('Як тебе звати?')
 
-        document.querySelector('p').innerHTML = `Привіт , ${name}! Тобі треба вгадати число яке загадав комп'ютер від 0 до 10`
+
+            while(flag){
+                if(name==""){
+                    name = prompt('Як тебе звати?')
+                }else{
+                    flag=false;
+                    break;
+                }
+            }
+        
+
+
+
+        document.querySelector('p').innerHTML = `Привіт , ${name}! Тобі треба вгадати число яке загадав комп'ютер від 0 до 9`
         let text = document.querySelector('.text')
         let num ;
         let person=0;
         let pc=0;
+        
         let pcResultShow = document.querySelector('.pcResult')
         let personResultShow = document.querySelector('.personResult')
         let sub = document.querySelector('.sub')
-        
+
         sub.addEventListener('click',function(){
             event.preventDefault();
-            num = Math.floor(Math.random() * 11);
-            if(num==text.value){
+            num = Math.floor(Math.random() * 10);
+            
+            if(text.value>9 || text.value < 0 || text.value==""){
+                alert('Будь ласка, введіть число від 0 до 9')
+            }else{
+                if(num==text.value){
                 alert("Вітаємо, ви вгадали число яке загадав комп'ютер");
                 person++;
                 pcResultShow.innerHTML = `PC ${pc}`
                 personResultShow.innerHTML = `Person ${person}`
                 
 
-            }else{
-                alert("Нажажль ви не вгадали число яке загадав комп'ютер, комп'ютер загадав число "+num)
-                pc++;
-                pcResultShow.innerHTML = `PC ${pc}`
-                personResultShow.innerHTML = `Person ${person}`
+                }else{
+                    alert("Нажажль ви не вгадали число яке загадав комп'ютер, комп'ютер загадав число "+num)
+                    pc++;
+                    pcResultShow.innerHTML = `PC ${pc}`
+                    personResultShow.innerHTML = `Person ${person}`
 
+                }
             }
+            
             text.focus();
             text.value='';
 
             if(pc==5){
             alert('Нажаль ти програв. Спробуй ще раз')
             location.reload();
-        }
+            }else if(person==5){
+                alert('Вітаємо, ви перемогли')
+            }
         })
 
         
