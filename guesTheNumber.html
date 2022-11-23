@@ -24,7 +24,7 @@
 
 
             while(flag){
-                if(name==""){
+                if(name=="" || name==null){
                     name = prompt('Як тебе звати?')
                 }else{
                     flag=false;
@@ -40,7 +40,7 @@
         let num ;
         let person=0;
         let pc=0;
-        
+
         let pcResultShow = document.querySelector('.pcResult')
         let personResultShow = document.querySelector('.personResult')
         let sub = document.querySelector('.sub')
