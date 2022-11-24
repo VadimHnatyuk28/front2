@@ -5,18 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+
+            }      
+
+
+
+        .gameWindow{
+            border: 3px solid black;
+            padding: 5px;
+            
+        }
+        input {
+            text-align: center;
+            height: 50px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .text{
+            font-size: 45px;
+            background-color:beige;
+        }
+
+        .sub{
+            margin-top: 10px;
+            font-size: 35px;
+            background-color: rgb(255, 251, 0);
+            cursor: pointer;
+        }
+        .sub:hover{
+            background-color: aqua;
+        }
+        .result{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            font-size: 30px;
+        }
+        p{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        
+    </style>
 </head>
 <body>
-    <p></p>
-    <form >
-        <input type="number" class="text" autocomplete="off" autofocus required="required" max="10" min="0">
-        <input type="submit" class="sub" onsubmit="return false; ">
-    </form>
-    <div class="result">
-        <span class="pcResult">PC 0</span>
-        <span class="personResult">Person 0</span>
+    
+    <div class="gameWindow">
+        <p></p>
+        <form >
+            <input type="number" class="text" autocomplete="off" autofocus required="required" max="9" min="0">
+            <input type="submit" class="sub" onsubmit="return false;" value="Відправити" >
+        </form>
+        <div class="result">
+            <span class="pcResult">PC 0</span>
+            <span >Загальний рахунок</span>
+            <span class="personResult">Person 0</span>
+            
+        </div>
+
+        
     </div>
-    <script>
+
+    
+        <script>
+    
 
             
         
@@ -26,7 +86,7 @@
 
             while(flag){
                 if(name=="" || name==null){
-                    name = prompt('Як тебе звати?')
+                    name = prompt('Введіть коректно данні')
                 }else{
                     flag=false;
                     break;
@@ -36,7 +96,7 @@
             let newStr = name[0].toUpperCase() + name.slice(1);
             
 
-        document.querySelector('p').innerHTML = `Привіт , ${newStr}! Тобі треба вгадати число яке загадав комп'ютер від 0 до 9`
+        document.querySelector('p').innerHTML = `Привіт , ${newStr} ! Тобі треба вгадати число яке загадав комп'ютер від 0 до 9`
         let text = document.querySelector('.text')
         let num ;
         let person=0;
@@ -45,6 +105,7 @@
         let pcResultShow = document.querySelector('.pcResult')
         let personResultShow = document.querySelector('.personResult')
         let sub = document.querySelector('.sub')
+        personResultShow.innerHTML = `${newStr} 0`
 
         sub.addEventListener('click',function(){
             event.preventDefault();
@@ -57,14 +118,14 @@
                 alert("Вітаємо, ви вгадали число яке загадав комп'ютер");
                 person++;
                 pcResultShow.innerHTML = `PC ${pc}`
-                personResultShow.innerHTML = `Person ${person}`
+                personResultShow.innerHTML = `${name} ${person}`
                 
 
                 }else{
                     alert("Нажажль ви не вгадали число яке загадав комп'ютер, комп'ютер загадав число "+num)
                     pc++;
                     pcResultShow.innerHTML = `PC ${pc}`
-                    personResultShow.innerHTML = `Person ${person}`
+                    personResultShow.innerHTML = `${name} ${person}`
 
                 }
             }
