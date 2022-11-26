@@ -1,0 +1,63 @@
+1. Difference between let, var and const
+    Декларація - створення змінної
+    Ініціалізація - присвоєння змінній значення
+
+    Hoisting (підняття) - оголошення змінної, функції після її виклику чи Ініціалізації
+
+
+    1. var можна повторно оголошувати а  let не можна повторно оголошувати і це +
+    2. змінна оголошена всередині блоку:  var доступна за межами блока а  let не доступна і це +
+
+2. Functions
+    
+    Functions declarations:
+        1. function getFun(){
+            return 'hello'
+        }
+
+        2. var square = function(a){
+            return a*a
+            }
+
+        3. var factorial = function fac(n){
+            return n < 2 ? 1 : n * fac(n - 1)
+        }
+
+        console.log(factorial(3))
+
+        4.function result(f,a){
+            return f()+a
+        }
+
+        var f = function(){
+            return 100
+        }
+
+        console.log(result(f,2))
+
+        5. function addSquares(a, b) {
+            function square(x) {
+            return x * x;
+            }
+            console.log(square(a) + square(b))
+        }
+        a = addSquares(2, 3);
+
+        6. function outside() {
+            var x = 5;
+            function inside(x) {
+            console.log(x * 2);
+            }
+            return inside;
+        }
+        
+        outside()(10);
+
+
+    Функція яка викликає саму себе - рекурсивна функція
+
+    Замикання - доступ вложенним функціям до всім значенням та функціям які має доступ зовнішня функція
+
+    Arguments - всі агрументи які передаються в функцію. arguments[0]
+
+    Стрілочні функції
