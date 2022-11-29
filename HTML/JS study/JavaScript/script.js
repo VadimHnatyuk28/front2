@@ -1,5 +1,17 @@
-function show(a){
-    console.log( arguments[0][7])
-}
+// //Присвоїли значення а=5
+// let a = 5
+// //Вивели це значення
+// console.log(a)
+// //запускажмо Проміс
+// let p = new Promise(function(resolve,reject){
+//     //Очікуємо на присвоєння а новому значенню
+//     setTimeout(() => {
+//         resolve(a=500)
+//     },  2000);
+// });
 
-show([0,1,2,3,4,5,6,8])
+// //Після присвоєння виконуємо функцію
+// p.then(function(){
+//     console.log(a)
+// })
+
