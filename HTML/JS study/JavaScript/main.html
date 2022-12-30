@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script src="./script.js"></script>
-</body>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <title>3 Havryliak</title>
+  </head>
+
+<style>
+  body{
+    display: flex;
+    justify-content: center;
+  }
+  .content{
+    border: 1px solid black;
+    /* height: 500px; */
+    padding: 10px;
+    width: 500px;
+  }
+</style>
+<div class="content">
+
+  <body>
+
+     <h1>Payment Form</h1>
+        <p>Required fields are followed by *.</p>
+    <br />
+         <h1>Contact information </h1>
+
+
+<form>
+
+    <fieldset style="width: 25%; margin-left: auto;">
+        <legend>Title:</legend>
+        <input type="radio" id="ace" name="fav_language" value="Ace"
+        label for="html">  Ace </label> <br>
+        <input type="radio" id="king" name="fav_language" value="King"
+        label for="html">King </label> <br>
+        <input type="radio" id="queen" name="fav_language" value="Queen"
+        label for="html">Queen </label> <br>
+    </fieldset>
+
+</form>
+<br>
+<form style=" width: 180px;margin-left: auto;">
+
+    <label for="fname" >Name:</label>
+    <input type="text" id="fname" name="fname"> <br><br>
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" name="email"> <br><br>
+    <label for="pass">Password:</label>
+    <input type="text" id="pass" name="pass"> <br><br>
+
+</form>
+
+    <h1>Payment information</h1>
+
+
+<form>
+
+    <label for="card">Card type:</label>
+    <select id="card" name="card">
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="express">American Express</option>
+    <option value="discover">Discover cards</option>
+    </select> <br><br>
+
+</form>
+
+<form>
+
+        <label for="cardnuber">Card number: </label>
+        <input type="text" id="cardnumber" name="cardnumber" > <br><br>
+
+</form>
+
+<form>
+
+    <label for="date">Expiration date: </label>
+    <input type="date" id="date" name="date">
+
+</form>
+
+<br>
+    <i>formatted as</i> <br>
+    <i>mm/dd/yyyy</i>
+
+<br>
+
+    <input type="submit" value="Validate the payment" style="margin: 0 auto; display: block;">
+
+
+</div>
+    </body>
 </html>

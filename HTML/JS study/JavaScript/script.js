@@ -1,25 +1,31 @@
-// //Присвоїли значення а=5
-// let a = 5
-// //Вивели це значення
-// console.log(a)
-// //запускажмо Проміс
-// let p = new Promise(function(resolve,reject){
-//     //Очікуємо на присвоєння а новому значенню
-//     setTimeout(() => {
-//         resolve(a=500)
-//     },  2000);
-// });
+class User{
+    constructor(username,password){
+        this.username = username;
+        this.password = password;
+    }
 
-// //Після присвоєння виконуємо функцію
-// p.then(function(){
-//     console.log(a)
-// })
-let a;
+    validatePassword(){
+        if(this.password.length>6){
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+    }
+}
 
-const foo = () => console.log('First')
-const bar = () => setTimeout(() => console.log('Second'), 500)
-const baz = () => console.log('Third')
+const person = new User('Vadim','1234554321');
 
-bar()
-foo()
-baz()
+
+class Student extends User{
+    constructor(username,password,nickname){
+        super(username,password) //зсилаємось на батьківський елемент 
+        this.nickname = nickname;
+    }
+}
+
+
+
+const person1 = new Student('Vadim','789456123','nagibator228')
+
+console.log(person1)
+ console.log(person.password)
