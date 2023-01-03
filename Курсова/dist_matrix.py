@@ -65,6 +65,25 @@ def city_distance(arr):
     print('Найкоротший шлях та довжина')
     print(path, distance)
 
+    directions(path,arr)
+
+def directions(path,all_adr):
+    i=1
+    while i < len(all_adr):
+        origin_adres = all_adr[i-1]
+        destination_adres = all_adr[i]
+        url = f"https://maps.googleapis.com/maps/api/directions/json?origin={origin_adres}&destination={destination_adres}=imperial&key=AIzaSyBziNeIwTqLw89CLI6yTz066I4tOVpLN60"
+        payload = {}
+        headers = {}
+        response = requests.request("GET", url, headers=headers, data=payload)
+
+        print(response.text)
+        i+=1
+
+
+
+
+
 
 
 
