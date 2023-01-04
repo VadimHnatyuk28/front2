@@ -1,0 +1,396 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ3Sz_QPN2NEcR1PsZRr9eZr0",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "partial_match" : true,
+         "place_id" : "ChIJA7o8N5wINEcR-T_tm6pR5ow",
+         "types" : [ "establishment", "point_of_interest", "travel_agency" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 48.3006347,
+               "lng" : 26.2705494
+            },
+            "southwest" : {
+               "lat" : 48.2175105,
+               "lng" : 25.928526
+            }
+         },
+         "copyrights" : "Map data ©2023 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "30.2 km",
+                  "value" : 30214
+               },
+               "duration" : {
+                  "text" : "38 mins",
+                  "value" : 2285
+               },
+               "end_address" : "Bohdana Khmel'nyts'koho St, 69А, Chernivtsi, Chernivets'ka oblast, Ukraine, 58000",
+               "end_location" : {
+                  "lat" : 48.2950092,
+                  "lng" : 25.928526
+               },
+               "start_address" : "Novoselytsya, Chernivtsi Oblast, Ukraine, 60300",
+               "start_location" : {
+                  "lat" : 48.2205003,
+                  "lng" : 26.2705494
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 156
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 28
+                     },
+                     "end_location" : {
+                        "lat" : 48.2203339,
+                        "lng" : 26.2690117
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e toward \u003cb\u003eвул. 1 Травня\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "caieH}}i_DaAzCCH?H@L?D@JHPDJHLhAv@"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2205003,
+                        "lng" : 26.2705494
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 154
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 28
+                     },
+                     "end_location" : {
+                        "lat" : 48.2208413,
+                        "lng" : 26.2670901
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eвул. 1 Травня\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "a`ieHiti_DQf@Kd@SjA]jCO|@EZ"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2203339,
+                        "lng" : 26.2690117
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "73 m",
+                        "value" : 73
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 11
+                     },
+                     "end_location" : {
+                        "lat" : 48.221152,
+                        "lng" : 26.266233
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eвул. Пушкіна\u003c/b\u003e",
+                     "maneuver" : "turn-slight-right",
+                     "polyline" : {
+                        "points" : "gcieHihi_DUj@g@~B"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2208413,
+                        "lng" : 26.2670901
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 km",
+                        "value" : 426
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 56
+                     },
+                     "end_location" : {
+                        "lat" : 48.2175105,
+                        "lng" : 26.2646662
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eвул. Чкалова\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "eeieH}bi_DDBf@^fEzA?GPEhCz@jDhAxC~@"
+                     },
+                     "start_location" : {
+                        "lat" : 48.221152,
+                        "lng" : 26.266233
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "7.3 km",
+                        "value" : 7317
+                     },
+                     "duration" : {
+                        "text" : "7 mins",
+                        "value" : 415
+                     },
+                     "end_location" : {
+                        "lat" : 48.2533796,
+                        "lng" : 26.1838931
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eвул. Центральна\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eН10\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow Н10\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "mnheHeyh_DAZAZA^CXEZGr@_@xCK|@Mr@QfAMt@UjAKb@Ux@Qj@ITIZGRENo@~CCLk@zCQnAIp@Ix@OxAa@vDGt@YzCSpBMhAKp@CNAJCDENM^KT_@z@iBzD}@lBkBtDg@bAMZMZKXM\\Mb@ITI\\Sr@g@lBk@xBkAnFeAtEAFK`@CDCLGLYt@gB|EEJe@jAo@dBsApDKZqAjDa@bA_ChGeA~Bc@~@Wl@[p@_@x@u@`B[|@c@pAiAnDCv@aBhFOf@k@rBe@lBg@bCa@bCe@dC]tBQrA{@lFOl@Or@Kj@GXK^u@vBQd@eAjCwAhD]x@sB|Es@dBy@nBWr@c@rAa@pAe@dBsAfFc@bBg@|Bo@fDcAvF_AnFO~@G^q@bEO|@eBxGK\\Of@Yt@Sj@Uh@c@|@aA|BaBrDyAfDcA~Bi@pAoBhEgBbEsBpEkBjEgBtDaA|BcA|BkAlCcAxBO\\EJUh@Wf@Wj@m@nA_@t@_AjBiAxBWb@wAlCy@|AWf@ILOXYd@o@dAgCjE}AlCY^a@j@_@j@[\\UTqAnAcC`CcCxBo@p@_@^KNe@j@CDQZS`@O\\Sh@GVGTc@`BOj@Uz@Ol@Uz@c@zAoApFo@nC_@~AGTGXELYnAS^A@ABC@ABC@ABA@GBE@G@}@JK@"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2175105,
+                        "lng" : 26.2646662
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "14.2 km",
+                        "value" : 14191
+                     },
+                     "duration" : {
+                        "text" : "13 mins",
+                        "value" : 786
+                     },
+                     "end_location" : {
+                        "lat" : 48.3002355,
+                        "lng" : 26.0160538
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eН03\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eН10\u003c/b\u003e (signs for \u003cb\u003eЧЕРНІВЦІ\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eCHERNIVTSI\u003c/b\u003e)",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "snoeHi`y~COB?VA\\AXC`@Ch@E`@Gd@Gd@Gh@AD?B@DE\\OfBE~@GtAGrBIhCGjBAh@AJGvBCbAAf@AHGvAGvBM~CCz@ErAIdCIrBC`@AXEtAI~BE`AALCb@Gz@Gr@KnAGp@_@vDUdCCNIv@QzAGn@O~ACZCRATC`@Cb@Ab@A\\?n@?RApF?P@x@?h@A`@?\\ATAXCVC\\EXG\\EZI^Kb@kAvFe@vBi@xBQn@]vAG\\GZ]rCShA_@`CIh@Kr@E\\CVCZCl@Ad@?@?h@?H?T@j@?ZB~@B~@BpA@`BAl@?XARGjAIz@Ix@K`AKt@SbBc@dDk@~DY`BUlAI^IZIVMb@_@|@EJ{@jBy@~A[j@[n@_@t@Sb@y@dB]r@c@z@]v@OZUf@Ob@[|@_@hAi@dBKTKVQ`@s@vAGLcApB}@bB{@`BuAlCEHQ^EFEJKTKXKXIZIZKb@Kp@G`@Mx@K~@WxBEf@C\\E^A^AZC^A^Af@G`FAr@Av@ChA?HEl@CXCZIt@_@nCSrA_@|CIr@EVC\\CVC\\C`@Af@Ah@AhA?NC`BEfFAd@@X?V?RB\\@TFfA@V@P?N?D?HALAH?B?@ADCFCFEJEHQ\\EHWf@Wf@Yf@Wd@Sb@CBWf@Yf@oCnGYl@qAvC]x@wAfDSd@wB|E}@pBUl@GVENGVAVATAT?T?N@N@NBXHt@Fr@JfALpAFx@B^@\\@b@@n@BpADdCDxAHrD@n@BtABr@@d@@VB\\BZBVBXDb@Hn@XzBhAbJHl@\\tCNdARbBZjCD`@B`@@\\BZ@`@?`@?^?XAXA\\AXAXEXCZIp@EXEXIf@O`Am@vDa@zBMp@UtAO~@Mp@a@`CYhBUnAShAOv@a@dBKb@Qn@CJQn@AB[jAk@rB_@tAS~@S|@Id@GVOx@M~@O~@MbAIp@Gr@KlAKhAMzAKhAQdCKvAIdAEr@ABEp@C^IbA?DGr@Gt@?HUxCc@hFc@hEUpBWdBO`A]bBUlAa@hB_@bBe@tBUbAQp@K`@M\\Sp@c@xA}@pCM`@]dAm@lBc@tAe@vAe@|Ai@dBADc@~AOh@Kd@Ib@Mp@Ih@Gf@Ef@ABIt@Ef@Gx@Ch@Ef@Cl@Ex@EfACrAIzCG`BAB?DAFAHARGz@YfGO~EGtAM`CGbAG`AGt@IfAKnAKbAKz@?@U|AO|@StAY~Aq@~CMj@_@vAi@lBa@tAo@fB?@GN]z@i@pAWh@uAtCOZGLWf@o@rA_B`DmAhCu@zA}@fB_@x@[p@o@nAg@bAmBzD{ChGIPi@jAcApBEHs@zAKTg@fAWj@Q`@ELO^M\\e@tAUv@Sx@I`@GVIf@Mn@M|@Gh@Gp@QjBKpBCdACx@IjGGvCEbCC|@E|@GvAEb@Ed@Ix@Iv@Mz@Kh@G^GVEVUbAq@dC_@vA_AbDSv@k@jBoFhReB|FUz@[~@Od@]`AUp@q@fBSh@a@`Ac@x@_@p@uBlDA@ABA@GTu@dAsBtC{@nAmCnD[b@Y`@w@hAk@v@iAvA{BxC}EnG_@d@_BxB{AjBmB|B_@^SPSPSNUNSLiAp@s@^EB_@Rq@Zg@DM@M?E?k@CI?E@KB"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2533796,
+                        "lng" : 26.1838931
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 177
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 20
+                     },
+                     "end_location" : {
+                        "lat" : 48.2999299,
+                        "lng" : 26.0146345
+                     },
+                     "html_instructions" : "At the roundabout, take the \u003cb\u003e3rd\u003c/b\u003e exit toward \u003cb\u003eЧЕРНІВЦІ\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eCHERNIVTSI\u003c/b\u003e",
+                     "maneuver" : "roundabout-right",
+                     "polyline" : {
+                        "points" : "osxeHigx}CCAEAC?E?C?E@C@E@GDEFGFCHEJCJAJ?J?T?@?@@JBHBHDHDFDDFDFBF@F?@?DN@DdAtA"
+                     },
+                     "start_location" : {
+                        "lat" : 48.3002355,
+                        "lng" : 26.0160538
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.7 km",
+                        "value" : 1661
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 106
+                     },
+                     "end_location" : {
+                        "lat" : 48.289584,
+                        "lng" : 25.9997408
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eвул. Січових Стрільців\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "qqxeHm~w}CVr@v@lCfArDf@jB\\fARt@`@lAv@bC@@Pr@FZL^Ph@DHL\\N\\Xj@NZV`@Zb@p@j@TPj@\\r@\\XH~@f@tB`APFnChAnBx@|Ar@j@Vp@ZZPf@`@TN`AfA\\p@\\x@HVj@|Ar@lBz@`CdAzCt@nBTj@?@Rj@`AjC~AlE"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2999299,
+                        "lng" : 26.0146345
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.6 km",
+                        "value" : 2615
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 231
+                     },
+                     "end_location" : {
+                        "lat" : 48.2913607,
+                        "lng" : 25.9679504
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eСічових стрільців\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eвул. Московської Олімпіади\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{pveHkau}CzBfGFNLZvB|FVn@Th@j@tAL^d@nAFV@BH\\Fb@Fd@@JBf@Bj@BfAAjBAbB?@MfBARG^SdBa@~C[vCGp@K`AStAMbAUp@Ur@M^Uf@g@`A_@l@aAbBa@t@_@b@]p@ITUh@GPCHENGRK^Oh@EXSfAKp@MfAOfAe@xDShBCZEXAXC`@EpB?bA?j@@b@?D?B@H@J@N@JBLDXLp@Nz@z@hE^hBF\\rAlIDXJr@Fn@Dj@FlA?rAC|@A^IlBSvA[|AS~@WbACPOn@[tACJQl@k@`CU|@w@tCYfAq@pB"
+                     },
+                     "start_location" : {
+                        "lat" : 48.289584,
+                        "lng" : 25.9997408
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.1 km",
+                        "value" : 1124
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 128
+                     },
+                     "end_location" : {
+                        "lat" : 48.288314,
+                        "lng" : 25.9562752
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003eСічових стрільців\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eвул. Московської Олімпіади\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "_|veHuzn}C?B?B?BAFCHGTW|@a@pA]nAUp@qAfEMf@Kb@Ur@Kb@SrAERAPCXAVAP?N?Z?H?TFhA@H@DBPFTJVXd@pApBXd@bCvDjAjB@BtCjExDbGbEpG"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2913607,
+                        "lng" : 25.9679504
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.6 km",
+                        "value" : 1604
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 290
+                     },
+                     "end_location" : {
+                        "lat" : 48.292465,
+                        "lng" : 25.9355817
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eвул. Руська\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eP62\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}hveHwql}CQfAk@rEAPe@|Dy@`HEVg@bEUhBYvBQtAIn@m@jFOfAGh@i@vEE\\[pEEf@UrDU|C[pEu@fKGz@KjAAHAHABCN?BADgBjI]`BEPk@vCMl@UzAQbA"
+                     },
+                     "start_location" : {
+                        "lat" : 48.288314,
+                        "lng" : 25.9562752
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 225
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : {
+                        "lat" : 48.2930734,
+                        "lng" : 25.9327014
+                     },
+                     "html_instructions" : "Continue straight onto \u003cb\u003eвул. Університетська\u003c/b\u003e",
+                     "maneuver" : "straight",
+                     "polyline" : {
+                        "points" : "{bweHkph}C[rAK`AO|AQfBEZMrAKtAITABA@A@"
+                     },
+                     "start_location" : {
+                        "lat" : 48.292465,
+                        "lng" : 25.9355817
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 km",
+                        "value" : 353
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 81
+                     },
+                     "end_location" : {
+                        "lat" : 48.2957098,
+                        "lng" : 25.930063
+                     },
+                     "html_instructions" : "Continue straight onto \u003cb\u003eвул. 28-го Червня\u003c/b\u003e",
+                     "maneuver" : "straight",
+                     "polyline" : {
+                        "points" : "ufweHk~g}CA@A@SH{AzA_AdA_@\\eBhBq@p@eAdA}A~A"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2930734,
+                        "lng" : 25.9327014
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 138
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 51
+                     },
+                     "end_location" : {
+                        "lat" : 48.2950092,
+                        "lng" : 25.928526
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eвул. Богдана Хмельницького\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ewweH{mg}ChB`FBD\\hA"
+                     },
+                     "start_location" : {
+                        "lat" : 48.2957098,
+                        "lng" : 25.930063
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "caieH}}i_DeAdD@V@PN\\HLhAv@]lAgApHUj@g@~Bl@b@fEzA?GPEhCz@dIhCCv@ShCkArIc@`Ca@|Am@pBeBxIu@tGwAzN_@vCc@jAiCvFiDbHoAtCo@tB{@`DwBhJwAdGmCnHoDnJ_GtO}C~GuAzC_AnCiAnDCv@qBpGqA`FiAfGcAzFmA`Is@fDaAvCwApD}GfPqAbDeAdDyBlIkA`FsB~KoAnHy@bFO|@eBxG[dAm@`B}ExKwHbQ{EtKsE`KuGbOcAzBeD|GsFhKkAtBoH~LaAvAq@r@iK|JuA`Be@|@c@fAcAzD_B`GgDvNMf@YnAS^CDEDOJwAPOB?VCv@UrCQxAYjEa@~Lc@rNw@zTUrFc@pFqBlSMnBCdC?fJEnBUlBgBvI_CxJaAvG{@|FMfCHrGDrDAfA]tEoA`KeA`H_@lBSr@m@`BwCbGyFrLe@jA{@fCu@zB]x@}DzHiDxGc@bAk@tBm@lEg@~EIzBMtJMzCaAtHs@fGM~BGdFE~HPnECd@IVeCzEiAvByGnOaH|Ok@lBExAFhAj@bGNzCd@nUJvBVdCjCbTdAvIJ|BAtBKjBY`CkDvSeBdKoApFs@jCkAhEg@|Bo@vDo@hFq@|Hm@vIe@rGy@bKy@zHg@fDs@pD}BfK_AbDkHlU_BtFm@dDYhCWrDg@jOM`B_A~Ta@bGc@pEsApI_AjEiAdEyAnEgAlCmB~D_BdDaHnNqMbXiClFwAbDyAjEo@zCk@hE]|EG~B[dRY~Em@vEk@rCeDxLwKn_@_BxEeApCeAzByCdFIViDzE_GdIiHrJyLzOmC|Cg@b@gC~AkCrAiAFu@CQDSCSDY^Kn@?XH^X\\XDFTdAtAVr@~B`IdArDnBhGx@xC|@pBf@|@Zb@p@j@`An@lAf@tDhB`DpAjH`DbAr@vAvAz@jBt@tBjFzNjBdFpF`OpElL|@jCZrBFrA@rDAdBOzByA|LSrBa@xCk@dBc@fAkDhG_@b@]p@_@~@Y~@[hAY`BoAzJ_@xDIrC?nBBv@Ht@~ApIf@fCxAfJRbBLxBCpCKlCo@tDk@bCs@bDkCbKkAxD?FMj@mBpGaCfI_@vBGd@GrA?d@F~ANv@d@|@jBvCfJrN|JtO}@zGgBhOiBzNoAlKo@tFa@xF}Bj\\WzC_EtRqA`Hs@bHYhDKXGFSH{AzA_BbB{H`IjCpH"
+         },
+         "summary" : "Н10",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
