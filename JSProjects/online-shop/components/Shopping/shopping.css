@@ -27,9 +27,13 @@
     height: 35px;
     top:20px;
     right: 20px;
-    background-image: url(/online-shop/assets/close.png);
+    background-image: url(/assets/close.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     cursor: pointer;
+}
+
+.shopping-element__img{
+    width: 100px;
 }

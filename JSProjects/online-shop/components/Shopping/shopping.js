@@ -13,6 +13,10 @@ class Shopping{
             if(productsStore.indexOf(element.id) !== -1){
                 htmlCatalog += `
                     <tr>
+                        <td >
+                        <img src="${element.img}" class="shopping-element__img"/>
+                        </td>
+                        
                         <td class="shopping-element__title">
                             ${element.title}
                         </td>
@@ -20,6 +24,7 @@ class Shopping{
                         <td class="shopping-element__price">
                             ${element.price.toLocaleString()}
                         </td>
+                        
                     </tr>
                 `;
                 sumCatalog+=element.price
@@ -29,7 +34,6 @@ class Shopping{
         const html = `
             <div class="shopping-container">
             <div class="shopping__close" onclick="shopingPage.handleClear()">
-            
             </div>
                 <table>
                     ${htmlCatalog}
@@ -47,6 +51,7 @@ class Shopping{
         `;
         ROOT_SHOPPING.innerHTML = html;
     }
+    
 }
 
 const shopingPage = new Shopping;
