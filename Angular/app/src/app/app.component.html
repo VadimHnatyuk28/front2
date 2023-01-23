@@ -1,0 +1,12 @@
+<app-global-error></app-global-error>
+
+<h1 class="font-bold mb-2 text-center text-lg">
+  {{title}}
+</h1>
+
+
+<p class="text-center text-large" *ngIf="loading">Loading...</p>
+<!-- <app-product *ngFor="let product of products" [product]="product"></app-product> -->
+
+<app-product *ngFor="let product of products$ | async" [product]="product"></app-product>
+

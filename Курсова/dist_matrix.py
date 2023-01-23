@@ -4,17 +4,27 @@ import json
 import numpy as np
 from python_tsp.exact import  solve_tsp_dynamic_programming
 
+# В цій функції ми повертаємо список міст між якими буде будуватись маршрут
 
 def get_distance_matrix():
 
+    # Точка з якої буде починатись шлях
     input_origin = 'Новоселиця'
-    input_data_destinations = ['Чернівці','Сторожинець','Хотин','Кіцмань']
+
+    # Масив із міст куди треба буде заїхати
+    input_data_destinations = ['Чернівці']
+
+    # Масив з усіх міст
     all_adr = [input_origin]+input_data_destinations
+
+
     print('Input array of cities')
     print(all_adr)
     print('')
+
     city_distance(all_adr)
 
+# Передається список із міст, визначається відстані між містами а також найкоротший шлях
 def city_distance(arr):
 
     matrix = []
@@ -70,6 +80,7 @@ def city_distance(arr):
     creating_way(arr,path)
 
 def creating_way(all_adr,path):
+    full_way = []
     i=1
     while i<len(path):
         origin=all_adr[i-1]
@@ -99,6 +110,7 @@ def creating_way(all_adr,path):
                     start_location_list.append(coordinate['start_location']['lat'])
                     start_location_list.append(coordinate['start_location']['lng'])
                     coordinate_dict.append(start_location_list)
+                    full_way.append(start_location_list)
                     start_location_list = []
                     print(coordinate['distance'])
                     print(coordinate['duration'])
@@ -111,8 +123,11 @@ def creating_way(all_adr,path):
                                   'start_location': coordinate['start_location'],
                                   'end_location': coordinate['end_location']
                                   })
-            print(place)
+            # print(place)
             print(coordinate_dict)
+
+
+    print(full_way)
 
 
 

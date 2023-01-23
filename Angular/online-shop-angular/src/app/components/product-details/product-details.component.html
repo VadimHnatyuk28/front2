@@ -1,0 +1,27 @@
+<div class="container">
+
+    <mat-card class="example-card" >
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+
+        </mat-card-header>
+        <mat-card-content>
+            <mat-card-subtitle>Violet</mat-card-subtitle>
+            <img class="image" mat-card-image src="{{product.image}}">	
+          <p>Ціна: {{product.price | currency}}</p>
+          <p>Рік випуску: {{product.year}}</p>
+          <p>Chip: {{product.configure.chip}}</p>
+          <p>SSD: {{product.configure.SSD}}</p>
+          <p>Display: {{product.configure.display}}</p>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="product-button">В кошик</button>
+          <button mat-raised-button class="product-button" [routerLink]="['/product',product.id]">Детальніше</button>
+        </mat-card-actions>
+      </mat-card>
+
+      
+      
+
+</div>

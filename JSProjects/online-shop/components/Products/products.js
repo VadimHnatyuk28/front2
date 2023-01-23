@@ -20,6 +20,8 @@ class Products{
     }
 
     render(){
+        
+        
         let htmlCatalog = ``;
 
         const productsStore = localStorageUtil.getProducts();
@@ -35,8 +37,23 @@ class Products{
                 activeClass = ' ' + this.classNameActive
             }
 
-            htmlCatalog += `
-            <li class="products-element">
+            if(document.querySelector('.admin')){
+                htmlCatalog += `
+                <li class="products-element">
+                <span class="products-element__title">${element.title}</span>
+                <img src="${element.img}" class="products-element__img"/>
+                <span class="products-element__price">₴ ${element.price.toLocaleString()}</span>
+                <span class="products-element__materials">${element.materials}</span>
+                <button class="products-element__btn" >Edit</button>
+                <button class="products-element__btn" onclick="adminService.delete(${element.id})">Delete</button>
+            </li>`; 
+            }
+
+            else
+            
+            {
+                htmlCatalog += `
+                <li class="products-element">
                 <span class="products-element__title">${element.title}</span>
                 <img src="${element.img}" class="products-element__img"/>
                 <span class="products-element__price">₴ ${element.price.toLocaleString()}</span>
@@ -44,9 +61,10 @@ class Products{
                 <button class="products-element__btn ${activeClass}" onclick="productsPage.handleSetLocationStorage(this,${element.id})">
                 ${activeText}
                 </button>
-            </li>
-            
-            `;  
+                </li>`;
+            }
+
+             
         });
 
         let html = `
@@ -55,6 +73,7 @@ class Products{
 
         `;
         ROOT_PRODUCTS.innerHTML = html;
+        
     }
 }
 

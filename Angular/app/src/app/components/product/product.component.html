@@ -1,0 +1,21 @@
+<app-global-error></app-global-error>
+<div class="py-4 px-6 border rounded flex items-center flex-col mb-2">
+    <h2 class="mb-2 text-md text-center"> Назва продукту = {{ product.title }}</h2>
+    <h2 >Ціна продукту = {{product.price | currency: 'UAH '}}</h2>
+    <img [src]="product.image" [alt]="product.title" class="h-52 ">
+
+    <button 
+    class="border py-2 px-4 rounded "
+    [ngClass]="{
+        'bg-yellow-400': !details,
+        'bg-blue-400': details 
+    }"
+    (click)="details = !details"
+    >
+    {{ details ? 'Hide' : 'Show' }} details
+    </button>
+
+
+    <p *ngIf="details">{{product.description}}</p>
+    <p *ngIf="details">{{product.rating.rate | number: '1.2-4'}}</p>
+  </div>

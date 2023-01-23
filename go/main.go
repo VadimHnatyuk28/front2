@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"path"
 )
 
 func main() {
@@ -49,5 +50,9 @@ func main() {
 	}
 
 	fmt.Print(carta)
+
+	func (path string) , ()  {
+		fmt.Print()
+	}
 
 }
