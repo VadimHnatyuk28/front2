@@ -27,7 +27,7 @@
     height: 35px;
     top:20px;
     right: 20px;
-    background-image: url(/assets/close.png);
+    background-image: url(../../assets/close.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
