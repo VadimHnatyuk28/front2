@@ -18,8 +18,6 @@ let table = document.querySelector('table')
 for (let i = 0; i < inputs.length; i++) {
     let input = inputs[i];
 
-
-    
     input.addEventListener("input", function (e) {
         let value = parseFloat(e.target.value);
         
@@ -45,16 +43,11 @@ btnDel.addEventListener('click',function(){
     location.reload()
 })
 
-
-
 window.onload = function() {
     result = JSON.parse(LS.getItem('values'))
     showData(result)
 
  };
-
-
-
 
  btn.addEventListener('click', function(e){
     let values = {}
