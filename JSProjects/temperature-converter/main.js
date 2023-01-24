@@ -23,16 +23,16 @@ for (let i = 0; i < inputs.length; i++) {
         
         switch (e.target.name) {
             case "celcius":
-                fahrenheitInput.value = (value * 1.8) + 32;
-                kelvinInput.value = value + 273.15;
+                fahrenheitInput.value = ((value * 1.8) + 32).toFixed(2);
+                kelvinInput.value = (value + 273.15).toFixed(2);
                 break;
             case "fahrenheit":
-                celciusInput.value = (value - 32) / 1.8;
-                kelvinInput.value = ((value - 32) / 1.8) + 273.15;
+                celciusInput.value = ((value - 32) / 1.8).toFixed(2);
+                kelvinInput.value = (((value - 32) / 1.8) + 273.15).toFixed(2);
                 break;
             case "kelvin":
-                celciusInput.value = value - 273.15;
-                fahrenheitInput.value = ((value - 273.15) * 1.8) + 32;
+                celciusInput.value = (value - 273.15).toFixed(2);
+                fahrenheitInput.value = (((value - 273.15) * 1.8) + 32).toFixed(2);
                 break;
         }
     });
