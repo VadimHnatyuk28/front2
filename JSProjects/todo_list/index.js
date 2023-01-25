@@ -33,7 +33,7 @@ function render(){
         }else{
             html+= `
                 
-                <div id='${todo.id}'>
+                <div id='${todo.id}' class='task'>
                 <input type='checkbox' data-id='${todo.id}' value='Done'/>
                 ${todo.text}
                 </div>
