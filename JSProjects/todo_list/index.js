@@ -25,12 +25,14 @@ function deleteTodo(id){
 }
 
 function render(){
+    
     let html = ''; 
     todos.forEach(todo => {
         if (todo.done) {
             return;
         }else{
             html+= `
+                
                 <div id='${todo.id}'>
                 <input type='checkbox' data-id='${todo.id}' value='Done'/>
                 ${todo.text}
@@ -38,16 +40,22 @@ function render(){
             `
         }
     })
+    
 
     todosNode.innerHTML = html;
 }
 
 btnNode.addEventListener('click', () =>{
-    const text = inputNode.value;
-    addTodo(text)
-    render()
-    inputNode.value='';
-    inputNode.focus();
+    if(inputNode.value === ''){
+        alert('Input mustn`t be empty')
+    }else{
+        const text = inputNode.value;
+        addTodo(text)
+        render()
+        inputNode.value='';
+        inputNode.focus();
+    }
+    
 })
 
 todosNode.addEventListener('click', (event) =>{
@@ -59,8 +67,10 @@ todosNode.addEventListener('click', (event) =>{
 
     
 
-    deleteTodo(id)
+    
+    // Async maybe?
 
+    setTimeout(deleteTodo, 200,id);
     setTimeout(render, 1000);
 
 })
