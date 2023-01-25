@@ -35,7 +35,7 @@ function render(){
                 
                 <div id='${todo.id}' class='task'>
                 <input type='checkbox' data-id='${todo.id}' value='Done'/>
-                ${todo.text}
+                <span class='txt'>${todo.text}</span>
                 </div>
             `
         }
@@ -47,14 +47,18 @@ function render(){
 
 btnNode.addEventListener('click', () =>{
     if(inputNode.value === ''){
-        alert('Input mustn`t be empty')
+        alert('Input mustn`t be empty');
+        inputNode.focus();
     }else{
-        const text = inputNode.value;
-        addTodo(text)
+        const capitalized = inputNode.value.charAt(0).toUpperCase()+ inputNode.value.slice(1)
+        addTodo(capitalized)
         render()
         inputNode.value='';
         inputNode.focus();
     }
+
+    
+    
     
 })
 
@@ -77,3 +81,35 @@ todosNode.addEventListener('click', (event) =>{
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+
+    let showHours = document.querySelector('.timer__hours');
+    let showMinutes = document.querySelector('.timer__minutes');
+    let showSeconds = document.querySelector('.timer__seconds');
+
+    function setTime(){
+        const time = new Date();
+
+        const seconds = time.getSeconds();
+        let minutes = time.getMinutes();
+        let hours = time.getHours();
+
+        if(seconds<9 || minutes<9 || hours<9){
+            showSeconds.textContent = '0'+seconds;
+            showMinutes.textContent = '0'+minutes;
+            showHours.textContent = '0'+hours;
+        }else{
+            showSeconds.textContent = seconds;
+            showMinutes.textContent = minutes;
+            showHours.textContent = hours;
+        }
+
+        
+        showMinutes.textContent = minutes;
+        showHours.textContent = hours;
+
+    }
+    
+    setInterval(setTime,1000)
+
+  });
