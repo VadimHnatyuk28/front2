@@ -1,13 +1,15 @@
 .task{
     margin: 5px 0;
-
     display: flex;
     word-break: break-all;
 }
 body{
     background: linear-gradient(#e66465, #9198e5);
-    height: 100vh;
 }
+body{
+    height: 97.7vh;
+}
+
 
 h1{
     text-align: center;

@@ -46,16 +46,21 @@ function render(){
 }
 
 btnNode.addEventListener('click', () =>{
-    if(inputNode.value === ''){
-        alert('Input mustn`t be empty');
-        inputNode.focus();
+    if(todos.length>9){
+        alert('Заплануйте не більше 10 справ')
     }else{
-        const capitalized = inputNode.value.charAt(0).toUpperCase()+ inputNode.value.slice(1)
-        addTodo(capitalized)
-        render()
-        inputNode.value='';
-        inputNode.focus();
+        if(inputNode.value === ''){
+            alert('Input mustn`t be empty');
+            inputNode.focus();
+        }else{
+            const capitalized = inputNode.value.charAt(0).toUpperCase()+ inputNode.value.slice(1)
+            addTodo(capitalized)
+            render()
+            inputNode.value='';
+            inputNode.focus();
+        }
     }
+    
 
     
     
