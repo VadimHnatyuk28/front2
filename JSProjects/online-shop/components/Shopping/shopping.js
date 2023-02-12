@@ -12,7 +12,7 @@ class Shopping{
         CATALOG.forEach((element) =>{
             if(productsStore.indexOf(element.id) !== -1){
                 htmlCatalog += `
-                    <tr>
+                    <tr id='${element.id}'>
                         <td >
                         <img src="${element.img}" class="shopping-element__img"/>
                         </td>
@@ -23,6 +23,10 @@ class Shopping{
 
                         <td class="shopping-element__price">
                             ${element.price.toLocaleString()}
+                        </td>
+
+                        <td class="shopping-element__price">
+                            <button onclick='shopingPage.deleteItem(${element.id},${element.price})'>Delete</button>
                         </td>
                         
                     </tr>
@@ -42,8 +46,8 @@ class Shopping{
                             Сумма:
                         </td>
 
-                        <td class="shopping-element__price">
-                            ${sumCatalog.toLocaleString()}
+                        <td class="shopping-element__price" id="final-price">
+                            ${sumCatalog}
                         </td>
                     </tr>
                 </table>
@@ -52,7 +56,15 @@ class Shopping{
         ROOT_SHOPPING.innerHTML = html;
     }
     
+    deleteItem(element,price){
+        let el = document.getElementById(element)
+        el.remove();
+        let pr = document.getElementById('final-price')
+        pr.textContent = +pr.textContent-price;
+    }
 }
+
+
 
 const shopingPage = new Shopping;
 
