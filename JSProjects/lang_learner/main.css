@@ -1,0 +1,46 @@
+.nextWord {
+  display: block;
+  margin: 5px auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nextWord {
+  position: relative;
+  background-color: #4caf50;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nextWord:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.nextWord:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}

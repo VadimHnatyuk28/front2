@@ -6,11 +6,11 @@ async function getData() {
 
 async function main() {
   const postsData = await getData();
-  let randomWord;
   let lengthOfData = postsData.length - 1;
   let engWord = document.querySelector(".eng");
   let ukrWord = document.querySelector(".ukr");
   let btn = document.querySelector(".nextWord");
+  let frame = document.querySelector("iframe");
 
   function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -21,6 +21,7 @@ async function main() {
   function render(num) {
     engWord.innerHTML = postsData[num].eng;
     ukrWord.innerHTML = postsData[num].ukr;
+    frame.src = `https://context.reverso.net/перевод/английский-русский/${postsData[num].eng}`;
   }
 
   btn.addEventListener("click", function () {
