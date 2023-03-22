@@ -77,10 +77,19 @@ async function main() {
     content.innerHTML = `<div>
       <h1 class="eng">${postsData[num].ukr}</h1>
       <form action="">
-      <input type="text"><br><br>
-      <input type="submit" value="Submit">
+      <input type="text" class="writeInput"><br><br>
+      <input type="submit" value="Submit" class="writeSubmit">
   </form> 
     </div>`;
+    let writeInput = document.querySelector(".writeInput");
+    let writeSubmit = document.querySelector(".writeSubmit");
+
+    writeSubmit.addEventListener("click", function () {
+      if (writeInput.value == postsData[num].eng) {
+        alert("!!!");
+        renderWrite(renderWrite(getRandomInt(0, lengthOfData)));
+      }
+    });
   }
 
   render(getRandomInt(0, lengthOfData));
