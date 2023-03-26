@@ -52,7 +52,7 @@ function main() {
       content.innerHTML += `<p>${count}. ${element} </p>`;
     });
 
-    content.innerHTML += `<input type="button" value="yes" class="subm" />
+    content.innerHTML += `<input type="button" value="Submit" class="subm" />
     </form>`;
 
     let subm = document.querySelector(".subm");
