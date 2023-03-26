@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Школа",
+    "text": [
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much"
+    ]
+  },
+  {
+    "title": "Друзі",
+    "text": [
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much"
+    ]
+  },
+  {
+    "title": "Робота",
+    "text": [
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much"
+    ]
+  },
+  {
+    "title": "Сім'я",
+    "text": [
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" /> much"
+    ]
+  }
+]

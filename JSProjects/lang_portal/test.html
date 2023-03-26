@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <form action="">
+      <p>
+        My name is
+        <input type="text" class="input_value" placeholder="vadim" /> !
+      </p>
+      <p>
+        My name is
+        <input type="text" class="input_value" placeholder="vadim" /> !
+      </p>
+      <p>
+        My name is
+        <input type="text" class="input_value" placeholder="vadim" /> !
+      </p>
+      <p>
+        My name is
+        <input type="text" class="input_value" placeholder="adim" /> !
+      </p>
+      <p>
+        My name is
+        <input type="text" class="input_value" placeholder="dim" /> !
+      </p>
+      <input type="button" value="yes" class="subm" />
+    </form>
+  </body>
+  <script>
+    let inps = document.querySelectorAll(".input_value");
+    let subm = document.querySelector(".subm");
+
+    subm.addEventListener("click", (e) => {
+      inps.forEach((element) => {
+        console.log(element.attributes[2].nodeValue);
+        console.log(element.value);
+        if (element.attributes[2].nodeValue == element.value) {
+          element.className = "input_value true";
+          element.readOnly = true;
+        } else {
+          element.className = "input_value false";
+        }
+      });
+    });
+  </script>
+</html>
+
+<!-- element.addEventListener("click", (e) => {
+    console.log(e.target.value);
+    console.log(e.target.attributes[2].nodeValue);
+    if (e.target.value == e.target.attributes[2].nodeValue) {
+      alert("yes");
+    }
+  }); -->

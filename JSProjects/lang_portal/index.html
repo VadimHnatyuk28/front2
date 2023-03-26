@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <a href="/" class="learning">Словник</a>
+          <a href="#" class="trueFalse"> Вірно\невірно </a>
+          <a href="#" class="write"> Пропиши слово </a>
+          <a href="#" class="text"> Встав пропущене слово правильно </a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="card">
+      <div class="card-words">
+        <h1 class="eng"></h1>
+        <h1 class="ukr"></h1>
+      </div>
+      <button type="button" class="nextWord">Next</button>
+      <!-- <iframe src="" frameborder="0" width="400px" height="600px"></iframe> -->
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script type="module" src="scripts/getData.js"></script>
+    <script type="module" src="scripts/renderVocabulary.js"></script>
+    <script type="module" src="scripts/renderTrueFalse.js"></script>
+    <script type="module" src="scripts/renderWrite.js"></script>
+    <script type="module" src="scripts/renderText.js"></script>
+  </body>
+</html>
