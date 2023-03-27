@@ -10,6 +10,7 @@ function main() {
   let nextWord = document.querySelector(".nextWord");
   let vocabBtn = document.querySelectorAll(".learning");
   let content = document.querySelector(".card");
+  let contentWords = document.querySelector(".card-words");
   //   let frame = document.querySelector("iframe");
 
   function getRandomInt(min, max) {
@@ -38,6 +39,7 @@ function main() {
       menu.classList.remove("active");
       menu_btn.classList.remove("active");
       nextWord.classList.remove("hidden");
+      location.reload();
       render(getRandomInt(0, lengthOfData));
     });
   });

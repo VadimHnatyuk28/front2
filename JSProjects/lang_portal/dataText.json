@@ -26,9 +26,25 @@
   {
     "title": "Сім'я",
     "text": [
-      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" /> much",
-      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" /> much",
-      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" /> much"
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much"
+    ]
+  },
+  {
+    "title": "Побут",
+    "text": [
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much"
+    ]
+  },
+  {
+    "title": "ТД",
+    "text": [
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much",
+      "I like it so <input type=\"text\" class=\"input_value\" placeholder=\"very\" data-right=\"much\" /> much"
     ]
   }
 ]
