@@ -10,7 +10,7 @@ function main() {
   let frame = document.querySelector("iframe");
   let content = document.querySelector(".card");
   let tfBtn = document.querySelector(".trueFalse");
-  let writeBtn = document.querySelector(".write");
+  let writeBtn = document.querySelectorAll(".write");
   let tfRate = 0;
 
   function renderWrite(num) {
@@ -51,9 +51,15 @@ function main() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  writeBtn.addEventListener("click", () => {
-    content.style.display = "none";
-    renderWrite(getRandomInt(0, lengthOfData));
+  writeBtn.forEach((element) => {
+    element.addEventListener("click", () => {
+      let menu = document.querySelector(".menu ");
+      let menu_btn = document.querySelector(".menu-btn ");
+      menu.classList.remove("active");
+      menu_btn.classList.remove("active");
+      content.style.display = "none";
+      renderWrite(getRandomInt(0, lengthOfData));
+    });
   });
 }
 

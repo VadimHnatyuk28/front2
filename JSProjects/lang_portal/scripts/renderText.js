@@ -18,7 +18,7 @@ function main() {
   let frame = document.querySelector("iframe");
   let content = document.querySelector(".card");
   let tfBtn = document.querySelector(".trueFalse");
-  let textBtn = document.querySelector(".text");
+  let textBtn = document.querySelectorAll(".text");
   let writeBtn = document.querySelector(".write");
   let tfRate = 0;
   let count = 0;
@@ -72,9 +72,15 @@ function main() {
     });
   }
 
-  textBtn.addEventListener("click", function () {
-    content.style.display = "none";
-    renderText();
+  textBtn.forEach((element) => {
+    element.addEventListener("click", function () {
+      let menu = document.querySelector(".menu ");
+      let menu_btn = document.querySelector(".menu-btn ");
+      menu.classList.remove("active");
+      menu_btn.classList.remove("active");
+      content.style.display = "none";
+      renderText();
+    });
   });
 }
 

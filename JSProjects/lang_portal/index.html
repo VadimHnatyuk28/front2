@@ -10,13 +10,44 @@
   <body>
     <div>
       <nav>
-        <ul>
-          <a href="/" class="navigation learning">Словник</a>
-          <a href="#" class="navigation trueFalse"> Вірно\невірно </a>
-          <a href="#" class="navigation write"> Пропиши слово </a>
-          <a href="#" class="navigation text">
+        <ul class="parent">
+          <a href="#" class="main navigation learning">Словник</a>
+          <a href="#" class="main navigation trueFalse"> Вірно\невірно </a>
+          <a href="#" class="main navigation write"> Пропиши слово </a>
+          <a href="#" class="main navigation text">
             Встав пропущене слово правильно
           </a>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#" class="burger navigation learning">Словник</a>
+                </li>
+                <li>
+                  <a href="#" class="burger navigation trueFalse">
+                    Вірно\невірно
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="burger navigation write">
+                    Пропиши слово
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="burger navigation text">
+                    Встав пропущене слово правильно
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <header class="burger">
+            <div class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </header>
         </ul>
       </nav>
     </div>

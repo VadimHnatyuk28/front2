@@ -8,9 +8,14 @@ function main() {
   let nextWord = document.querySelector(".nextWord");
   let frame = document.querySelector("iframe");
   let content = document.querySelector(".card");
-  let tfBtn = document.querySelector(".trueFalse");
+  let tfBtn = document.querySelectorAll(".trueFalse");
   let writeBtn = document.querySelector(".write");
   let tfRate = 0;
+
+  //
+  // let menu = document.querySelector(".menu ");
+  // let menu_btn = document.querySelector(".menu-btn ");
+
   function renderTrueFalse(trueNum, falseNum, falseNumTwo) {
     content.style.display = "block";
     let newArr = shuffle([trueNum, falseNum, falseNumTwo]);
@@ -72,13 +77,19 @@ function main() {
     }
     return arr;
   }
-  tfBtn.addEventListener("click", () => {
-    content.style.display = "none";
-    renderTrueFalse(
-      getRandomInt(0, lengthOfData),
-      getRandomInt(0, lengthOfData),
-      getRandomInt(0, lengthOfData)
-    );
+  tfBtn.forEach((element) => {
+    element.addEventListener("click", () => {
+      content.style.display = "none";
+      let menu = document.querySelector(".menu ");
+      let menu_btn = document.querySelector(".menu-btn ");
+      menu.classList.remove("active");
+      menu_btn.classList.remove("active");
+      renderTrueFalse(
+        getRandomInt(0, lengthOfData),
+        getRandomInt(0, lengthOfData),
+        getRandomInt(0, lengthOfData)
+      );
+    });
   });
 }
 
